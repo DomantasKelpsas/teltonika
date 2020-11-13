@@ -1,7 +1,7 @@
 
 <?php 
 require 'db/db_connect.php';
-require 'db/db_getlist.php';
+
 
 ?>
 <!DOCTYPE html>
@@ -11,6 +11,7 @@ require 'db/db_getlist.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/accordion.css">
+    <link rel="stylesheet" href="styles/cards.css">
     <title>Teltonika</title>
 </head>
 <body>
@@ -20,12 +21,7 @@ require 'db/db_getlist.php';
     
 
     <section class="data-list">
-        <?php foreach($countries as $country):?>
-        <button class="accordion"><h2><?= $country['name']?></h2></button>  
-        <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div> 
-        <?php  endforeach;?>      
+      <?php include 'components/datalist.php'?>  
     </section>
 
 <script src="js/accordion.js"></script>
