@@ -1,0 +1,13 @@
+section.hero{
+    width: 100%;
+    height: 75vh;
+    background: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1.hero-title{
+    text-align: center;
+    margin: 5rem 0;
+}
