@@ -16,27 +16,7 @@ foreach($countries as $country):?>
           ?></p>
           <h4>Tel kodas</h4>
           <p><?= "+".$country['phonecode']?></p>
-
-          <?php 
-          $getCities = $conn->prepare("SELECT * FROM city WHERE city.fk_countryId = ".$country['id']);
-          $getCities->execute();
-          $cities = $getCities->fetchAll(); ?>
           
-        
-          
-          <div class="row">
-          <?php foreach($cities as $city):?>
-            <div class="column">
-                <div class="card">
-                    <img class="card-img" alt="nuotauka" src="<?= $city['img']?>">
-                        <h2><?=$city['name']?></h2>
-                        <p><h4>Plotas: </h4><?=$city['area']." km"?><sup>2</sup></p>
-                        <p><h4>Gyventojai: </h4><?= $city['population']?></p>
-                        <p><h4>Pasto kodas: </h4><?= $city['postal_code']?></p>
-                    </div>
-                </div>
-                <?php  endforeach;?> 
-            </div>
-               
-        </div> 
+          <?php include('datalist_cities.php') ?>;    
+         
         <?php  endforeach;?>    
