@@ -1,7 +1,7 @@
 <div class="row">
-          <?php 
-           $cities = getCitiesByCountry($country['id'],$conn);
-          foreach($cities as $city):?>
+          <?php
+           $cities = getCitiesByCountry($country['id'], $conn);
+          foreach ($cities as $city):?>
             <div class="column">
                 <div class="card">
                     <img class="card-img" alt="nuotauka" src="<?= $city['img']?>">

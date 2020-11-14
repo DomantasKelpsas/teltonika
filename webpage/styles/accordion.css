@@ -9,8 +9,13 @@
     outline: none;
     font-size: 15px;
     transition: 0.4s;
-    margin: 0.1rem 0;
-    
+    margin: 0.3rem 0;   
+  }
+
+  .accordion h2 {
+  display: inline;
+  vertical-align: middle;
+  padding-right: 1rem;
   }
   
   .active, .accordion:hover {
@@ -22,4 +27,20 @@
     display: none;
     background-color: white;
     overflow: hidden;
+    
+  }
+
+  .country-flag-img{
+    width: 50px;
+    float: right;
+  }
+
+  .country-details{
+    width: 75%;
+    margin: 2rem auto;
+
+  }
+
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
   }
