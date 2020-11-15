@@ -34,6 +34,7 @@
   .country-flag-img{
     width: 50px;
     float: right;
+    border: 2px solid rgba(0, 0, 0, 0.7);
   }
 
   .country-details{
