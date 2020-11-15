@@ -47,22 +47,3 @@ h1.hero-title{
   100% {left:5rem; top:5rem}
 }
 
-.paging{
-  padding: 2rem 0.5rem;
-}
-
-.paging a{
-  margin: 0.5rem;
-  padding: 0.8rem;
-  background-color: rgb(255, 192, 74);
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.paging a:hover{
- 
-  background-color: rgb(255, 173, 20);
-  
-}

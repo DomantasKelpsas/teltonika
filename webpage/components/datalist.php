@@ -1,10 +1,13 @@
 
 <?php 
-require 'db/db_getlist.php';
+require 'db/db_getlist.php'; ?>
 
-include 'search.php';
-include 'paging.php';
+<div class="search-container">
+<?php include 'search.php';
+include 'paging.php'; ?>
+</div>
 
+<?php
 foreach($countries as $country):?>
         <button class="accordion"><h2><?= $country['name']?></h2>
         <?php if(!is_null($country['flag'])): ?>

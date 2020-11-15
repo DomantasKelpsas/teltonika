@@ -6,7 +6,7 @@ $getCountries = $conn->prepare("SELECT * FROM country ORDER BY id ASC");
 $getCountries->execute();
 $countries = $getCountries->fetchAll();
 
-$itemsPerPage = 20;
+$itemsPerPage = 15;
 $getCountriesCount = $conn->prepare("SELECT COUNT(id) fROM country");
 $getCountriesCount->execute();
 $row = $getCountriesCount->fetch();
@@ -32,12 +32,12 @@ function getCitiesByCountry($countryId, PDO $conn)
     return $cities;
 }
 
-// function getCountriesBySearch($countryString, PDO $conn)
-// {
-//     $getCountriesByString = $conn->prepare("SELECT * FROM country WHERE country.name LIKE $countryString");
-//     $getCountriesByString->execute();
-//     $countriesByString = $getCountriesByString->fetchAll();
-//     return $countriesByString;
-// }
+function getCountriesBySearch($countryString, PDO $conn)
+{
+    $getCountriesByString = $conn->prepare("SELECT * FROM country WHERE country.name LIKE \"%$countryString%\"");
+    $getCountriesByString->execute();
+    $countries = $getCountriesByString->fetchAll();
+    return $countries;
+}
 
 
