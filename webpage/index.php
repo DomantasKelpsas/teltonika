@@ -20,6 +20,13 @@
       <?php include 'components/datalist.php'?>  
     </section>
 
+    <footer>
+    <div class="footer-text"> 
+      <h3>Domantas Kelpšas 2020</h3>
+      <h5>Teltonika praktikos užduotis</h5>
+    </div> 
+    </footer>
+
 <script src="js/accordion.js"></script>
 </body>
 </html>

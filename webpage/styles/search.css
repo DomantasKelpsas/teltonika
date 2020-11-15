@@ -7,7 +7,7 @@
 .paging a{
   margin: 0.5rem;
   padding: 0.8rem;
-  background-color: rgb(255, 192, 74);
+  background-color: #f4a261;
   border-radius: 5px;
   color: white;
   font-weight: bold;
@@ -16,7 +16,7 @@
 
 .paging a:hover{
  
-  background-color: rgb(255, 173, 20);
+  background-color: #e76f51;
   
 }
 
@@ -39,10 +39,27 @@
 }
 
 .search-box button{
-  background-color: rgb(255, 192, 74);
-  border: 2px solid orange;
+  background-color: #f4a261;;
+  border: 2px solid #e76f51;
 }
 
 .search-box button:hover{
-  background-color: rgb(255, 173, 20);
+  background-color: #e76f51;
+}
+
+@media screen and (max-width: 600px) {
+  .paging, .search-box {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+   .search-box {
+    
+    top: 0;
+    right: 0;   
+   
+  }
 }

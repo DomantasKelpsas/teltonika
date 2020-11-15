@@ -26,8 +26,13 @@ section.hero{
 
 .data-list{
 
-  width: 90%;
+  width: 75%;
   margin: 5rem auto;
+}
+@media screen and (max-width: 800px) {
+  .data-list {
+    width: 90%;
+  }
 }
 
 h1.hero-title{
@@ -47,3 +52,18 @@ h1.hero-title{
   100% {left:5rem; top:5rem}
 }
 
+footer{
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  background-color: #264653;
+  text-align: center;  
+}
+
+.footer-text{
+  position: absolute;
+  top: 50%;
+  right: 45%;
+  color: #f2f2f2;
+  /* transform: translate(-60%, -50%); */
+}
