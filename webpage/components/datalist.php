@@ -2,6 +2,7 @@
 <?php 
 require 'db/db_getlist.php';
 
+include 'search.php';
 include 'paging.php';
 
 foreach($countries as $country):?>

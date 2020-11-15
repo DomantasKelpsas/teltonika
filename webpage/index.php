@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/accordion.css">
     <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Teltonika</title>
 </head>
 <body>
@@ -21,3 +23,4 @@
 <script src="js/accordion.js"></script>
 </body>
 </html>
+
