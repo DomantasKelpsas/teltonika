@@ -7,15 +7,15 @@
     </p>
     <p>
         <label for="area">Šalies plotas:</label>
-        <input type="text" name="area" id="area">
+        <input type="number" name="area" id="area">
     </p>
     <p>
         <label for="population">Šalies gyv. skaičius:</label>
-        <input type="text" name="population" id="population">
+        <input type="number" name="population" id="population">
     </p>
     <p>
         <label for="phonecode">Šalies Tel. kodas:</label>
-        <input type="text" name="phonecode" id="phonecode">
+        <input type="number" name="phonecode" id="phonecode">
     </p>
     <p>
         <label for="flag">Šalies vėliavos URL:</label>
