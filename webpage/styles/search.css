@@ -47,6 +47,16 @@
   background-color: #e76f51;
 }
 
+.btnAdd{
+  margin: 0.5rem;
+  padding: 0.8rem;
+  background-color: #41f016;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 600px) {
   .paging, .search-box {
     width: 100%;

@@ -6,7 +6,7 @@ $getCountries = $conn->prepare("SELECT * FROM country ORDER BY id ASC");
 $getCountries->execute();
 $countries = $getCountries->fetchAll();
 
-$itemsPerPage = 15;
+$itemsPerPage = 10;
 $getCountriesCount = $conn->prepare("SELECT COUNT(id) fROM country");
 $getCountriesCount->execute();
 $row = $getCountriesCount->fetch();

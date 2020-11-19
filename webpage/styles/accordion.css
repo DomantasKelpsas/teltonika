@@ -31,9 +31,15 @@
     
   }
 
+.editing-btns-pannel{
+
+  float: right;
+  display: flex;
+    align-items: center;
+}
   .country-flag-img{
     width: 50px;
-    float: right;
+    
     border: 2px solid rgba(0, 0, 0, 0.7);
   }
 
@@ -45,4 +51,19 @@
 
   tr:nth-child(odd) {
     background-color: #f2f2f2;
+  }
+
+  .editing-btns-pannel input{
+   
+    margin: 0 1rem; 
+    color: white;
+    
+  }
+
+  .editBtn{
+    background-color: green;
+  }
+
+  .delBtn{
+    background-color: red;
   }
