@@ -30,17 +30,37 @@
     overflow: hidden;
     
   }
+  .editing-btns-pannel{
 
-.editing-btns-pannel{
+    float: right;
+    display: flex;
+      align-items: center;
+  }
+  
+  .editing-btns-pannel a{
+   
+    margin: 0.5rem;
+    padding: 0.5rem;
+    
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    
+  }
+  
+  .editBtn{
+    background-color: #41f016;
+  }
+  
+  .delBtn{
+    background-color: red;
+  }
 
-  float: right;
-  display: flex;
-    align-items: center;
-}
   .country-flag-img{
     width: 50px;
-    
     border: 2px solid rgba(0, 0, 0, 0.7);
+    margin: 0 3rem;
   }
 
   .country-details{
@@ -53,17 +73,4 @@
     background-color: #f2f2f2;
   }
 
-  .editing-btns-pannel input{
-   
-    margin: 0 1rem; 
-    color: white;
-    
-  }
-
-  .editBtn{
-    background-color: green;
-  }
-
-  .delBtn{
-    background-color: red;
-  }
+  

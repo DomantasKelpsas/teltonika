@@ -5,18 +5,25 @@ require 'db/db_getlist.php'; ?>
 <div class="search-container">
 <?php include 'search.php';
 include 'paging.php'; ?>
+
+</div>
+<div class="sorting-container">
 <a class="btnAdd" href="./components/country-add.php"><i class="fa fa-plus"></i></a>
+<a class="btnSortNameASC" href="index.php?sortby=nameASC"><i class="fa fa-sort-alpha-asc"></i></a>
+<a class="btnSortNameDSC" href="index.php?sortby=nameDSC"><i class="fa fa-sort-alpha-desc"></i></a>
+<!-- <a class="btnSortDateASC" href="index.php?sortby=dateASC"><i class="fa fa-plus"></i></a>
+<a class="btnSortDateDSC" href="index.php?sortby=dateDSC"><i class="fa fa-plus"></i></a> -->
 </div>
 
 <?php
 foreach($countries as $country):?>
         <button class="accordion"><h2><?= $country['name']?></h2>
-        <div class="editing-btns-pannel">
         <?php if(!is_null($country['flag'])): ?>
         <img class="country-flag-img" alt="veliava" src="<?= $country['flag']?>">
         <?php endif; ?>
-        <input name="SubmitDel" type="button" class="delBtn" onclick="javascript:location.href='./db/delete.php?id=<?php echo $country['id'];?>';" value="Delete" />
-        <input name="SubmitDel" type="button" class="editBtn" onclick="javascript:location.href='./db/edit.php?id=<?php echo $country['id'];?>';" value="Edit" />
+        <div class="editing-btns-pannel">
+        <a class="editBtn" href="./components/country-add.php?edit=true&id=<?= $country['id'];?>"> <i class="fa fa-pencil"></i></a>
+        <a class="delBtn" href="./db/delete.php?id=<?= $country['id'];?>"><i class="fa fa-times"></i> </a>      
         </div>
         </button>  
         <div class="panel">

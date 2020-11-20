@@ -1,0 +1,19 @@
+.add-form-container{
+    width: 100%;
+    text-align: center;
+    
+    
+}
+
+.add-form-container form{
+    margin: 0 auto;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.submit{
+    padding: 0.5rem 3rem;
+    margin: 2rem auto;
+}
